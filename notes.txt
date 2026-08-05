@@ -1,2 +1,3 @@
 Hello Git
 This is my first Git file.
+Today is Git Day 6.
