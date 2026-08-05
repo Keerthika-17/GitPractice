@@ -1,3 +1,4 @@
 Hello Git
 Git is amazing.
 Today is Day 7.
+Learning git diff today.
