@@ -1,0 +1,2 @@
+This branch is connected to GitHub.
+Tracking makes pushing easier.
