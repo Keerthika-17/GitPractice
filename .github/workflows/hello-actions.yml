@@ -10,8 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say hello
-        run: echo "Hello from GitHub Actions!"
+  - name: Show Git version
+    run: git --version
 
-      - name: Show repository
-        run: echo "GitHub Actions is running for GitPractice"
+  - name: Show repository
+    run: echo "Repository: $GITHUB_REPOSITORY"
+
+  - name: Show branch
+    run: echo "Branch: $GITHUB_REF_NAME"
+
+  - name: List files
+    run: ls -la
