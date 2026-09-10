@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  - name: Show Git version
-    run: git --version
+      - name: Show Git version
+        run: git --version
 
-  - name: Show repository
-    run: echo "Repository: $GITHUB_REPOSITORY"
+      - name: Show repository
+        run: echo "Repository: $GITHUB_REPOSITORY"
 
-  - name: Show branch
-    run: echo "Branch: $GITHUB_REF_NAME"
+      - name: Show branch
+        run: echo "Branch: $GITHUB_REF_NAME"
 
-  - name: List files
-    run: ls -la
+      - name: List files
+        run: ls -la
