@@ -28,6 +28,9 @@ jobs:
       - name: Check requests
         run: pip show requests
 
+      - name: Run Python script
+        run: python hello.py
+
       - name: Show Python version
         run: python --version
 
