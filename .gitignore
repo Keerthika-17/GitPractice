@@ -1,1 +1,4 @@
-*.log
+*.log__pycache__/
+
+__pycache__/
+debug.log
