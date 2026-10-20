@@ -22,10 +22,10 @@ jobs:
         run: git --version
 
       - name: Show repository
-        run: echo "Repository: $GITHUB_REPOSITORY"
+        run: 'echo "Repository: $GITHUB_REPOSITORY"'
 
       - name: Show branch
-        run: echo "Branch: $GITHUB_REF_NAME"
+        run: 'echo "Branch: $GITHUB_REF_NAME"'
 
       - name: Run Python tests
         run: python -m unittest test_hello.py
