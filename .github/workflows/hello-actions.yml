@@ -10,14 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  - name: Show Git version
-    run: git --version
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-  - name: Show repository
-    run: echo "Repository: $GITHUB_REPOSITORY"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-  - name: Show branch
-    run: echo "Branch: $GITHUB_REF_NAME"
+      - name: Show Git version
+        run: git --version
 
-  - name: List files
-    run: ls -la
+      - name: Show repository
+        run: echo "Repository: $GITHUB_REPOSITORY"
+
+      - name: Show branch
+        run: echo "Branch: $GITHUB_REF_NAME"
+
+      - name: Run Python tests
+        run: python -m unittest test_hello.py
