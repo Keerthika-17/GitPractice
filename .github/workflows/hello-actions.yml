@@ -28,6 +28,6 @@ jobs:
 
       - name: Show branch
         run: 'echo "Branch: $GITHUB_REF_NAME"'
-        
+
       - name: Run Python tests
         run: python -m unittest test_hello.py
