@@ -5,6 +5,11 @@ on:
     branches:
       - main
       - actions-check
+    paths:
+      - 'hello.py'
+      - 'test_hello.py'
+      - 'run_tests.py'
+      - '.github/workflows/hello-actions.yml'
   workflow_dispatch:
 
 jobs:
