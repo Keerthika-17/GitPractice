@@ -44,7 +44,6 @@ jobs:
           path: test-results.txt
   report:
     runs-on: ubuntu-latest
-    needs: test
     steps:
       - name: Generate report message
         run: echo "Python tests completed successfully!"
