@@ -44,6 +44,7 @@ jobs:
           path: test-results.txt
   report:
     runs-on: ubuntu-latest
+    if: success()
     steps:
       - name: Generate report message
         run: echo "Python tests completed successfully!"
